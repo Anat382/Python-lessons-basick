@@ -32,7 +32,8 @@ count_klasses = len(klasses)
 count_ftutors = len(tutors)
 difcount_ftutors = abs(count_klasses-count_ftutors)
 
-klasses = [klasses + [None] for _ in range(difcount_ftutors) if count_klasses < count_ftutors][0]
+klasses_ = [klasses + [None] for _ in range(difcount_ftutors) if count_klasses < count_ftutors]
+klasses = klasses_[0] if klasses_ else klasses
 
 n_gen = ((i, n) for i, n in zip(tutors, klasses))
 print(type(n_gen), dict(n_gen))
