@@ -86,15 +86,3 @@ print(test_cells + test_cells2)
 print(test_cells * test_cells2)
 print(test_cells // test_cells2)
 print(test_cells2.make_order(5))
-
-
-
-
-
-
-
-
-
-
-
-
